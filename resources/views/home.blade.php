@@ -13,7 +13,7 @@
                 <div class="card-body">
                     @forelse ($users as $user)
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <p>{{$user->name}} {{$user->lastname}}</p>
                             </div>
                             <div class="col-auto">
