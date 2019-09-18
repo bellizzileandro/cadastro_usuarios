@@ -9,6 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <meta name="author" content="Leandro Bellizzi" />
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -18,6 +20,13 @@
 
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" size="16X16" href="{{ asset('/favicon_16.ico') }}" />
+    <link rel="icon" size="32x32" href="{{ asset('/favicon_32.ico') }}" />
+    <link rel="icon" size="64x64" href="{{ asset('/favicon_64.ico') }}" />
+    <link rel="icon" size="128x128" href="{{ asset('/favicon_128.ico') }}" />
+    <meta name="theme-color" content="#000000" />
 </head>
 <body>
     <div id="app">
@@ -42,7 +51,6 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">
-                                    <i class="fas fa-sign-in-alt icon icon-login"></i>
                                     {{ __('Login') }}
                                 </a>
                             </li>

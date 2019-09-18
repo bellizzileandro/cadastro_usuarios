@@ -37,6 +37,13 @@
                     @empty
                         <p>Nenhum usuário cadastrado!</p>
                     @endforelse
+                    <div class="card-footer bg-transparent">
+                        <nav aria-label="Users pagination">
+                            <div class="pagination pagination-sm justify-content-end">
+                                {{ $users->links() }}
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>

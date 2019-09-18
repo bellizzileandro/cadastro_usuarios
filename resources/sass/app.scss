@@ -35,12 +35,16 @@ body {
     height: 100vh;
 }
 
-a {
-    text-decoration: none;
-}
-
+a,
 a:visited {
     text-decoration: none;
+    color: #57489d;
+}
+
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: #57489d;
 }
 
 
@@ -48,7 +52,7 @@ a:visited {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 300;
-    background: linear-gradient(to right, #a5a4a4 10%, #fff 50%, #73cae4 60%);
+    background: linear-gradient(to right, #714d9f 10%, #55479d 50%, #35419a 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -63,7 +67,7 @@ a:visited {
 
 .icon {
     color: #fff;
-    background: linear-gradient(to right, #a5a4a4 10%, #fff 50%, #73cae4 60%);
+    background: linear-gradient(to right, #714d9f 10%, #55479d 50%, #35419a 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -74,12 +78,7 @@ a:visited {
     -webkit-text-fill-color: transparent;
     animation: textclip 8.5s linear infinite;
     display: inline-block;
-    margin-right: 15px;
-}
-
-.icon-login,
-.icon-logout {
-    margin-right: 7.5px;
+    margin-right: 5px;
 }
 
 .greeting {
@@ -89,7 +88,7 @@ a:visited {
 		font-size: 36px;
 		text-transform: uppercase;
 		font-weight: 700;
-		background: linear-gradient(to right, #a5a4a4 10%, #fff 50%, #73cae4 60%);
+		background: linear-gradient(to right, #714d9f 10%, #55479d 50%, #35419a 60%);
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
@@ -101,6 +100,20 @@ a:visited {
 		animation: textclip 3s linear infinite;
 		display: inline-block;
 	}
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #714d9f;
+    border-color: #714d9f;
+}
+
+.pagination-sm .page-link {
+    padding: .25rem .5rem;
+    font-size: .7875rem;
+    line-height: 1.5;
+    color: #714d9f;
 }
 
 @keyframes textclip {

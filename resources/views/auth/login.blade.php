@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <i class="fa fa-user"></i>
-                    {{ __('Login') }}
+                    <i class="fa fa-user icon"></i>
+                    <span style="font-size: 1.2rem">{{ __('Login') }}</span>
                 </div>
 
                 <div class="card-body">
@@ -58,13 +58,8 @@
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
+                                    <i class="fas fa-sign-in-alt" color="#fff"></i>
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     </form>
