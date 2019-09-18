@@ -39,5 +39,14 @@ class WelcomeController extends Controller
         return view('welcome', compact('greeting'));
     }
 
+    /**
+     * Show the application login
+     * 
+     * @return \Illuminate\Contract\Support\Renderable
+     */
+    public function start() {
+        return view('auth.login');
+    }
+
     
 }

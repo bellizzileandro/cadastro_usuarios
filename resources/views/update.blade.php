@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{__('Editar dados do usuário')}}</div>
+                <div class="card-header">
+                    <i class="fas user-cog icon"></i>
+                    <span style="font-size: 1.2rem">{{__('Editar dados do usuário')}}</span>
+                </div>
 
                 <div class="card-body">
                     <form action="{{ route('users.update', ['user' => $user->id]) }}" method="post">
@@ -59,5 +61,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

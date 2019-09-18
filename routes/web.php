@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index')->name('welcome');
+Route::get('/', 'WelcomeController@start')->name('welcome');
+
+Route::get('/home', 'WelcomeController@index');
 
 Auth::routes();
 

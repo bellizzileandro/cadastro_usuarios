@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Novo Usuário') }}</div>
+                <div class="card-header">
+                    <i class="fas fa-user-plus icon"></i>
+                    <span style="font-size: 1.2rem">{{ __('Novo Usuário') }}</span>
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('users.store') }}">
@@ -73,5 +75,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
